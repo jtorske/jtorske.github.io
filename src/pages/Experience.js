@@ -29,7 +29,7 @@ function Experience() {
         <br />
         <br />
         <br />
-          <p className="credentials">Download my full resume <a href="/path/to/resume.pdf" download>here</a></p>
+          <p className="credentials">Download my resume from <a href="Resume.pdf" target="_blank" rel="noopener noreferrer">here</a></p>
         </div>
       </div>
     </>
