@@ -1,14 +1,14 @@
 .body {
   color: white;
-  font-size: 70px;
+  font-size: 50px;
   margin-top: 0;
   padding-top: 0;
   text-align: left;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 
 }
 
@@ -35,7 +35,7 @@ img {
 
 .about {
   margin-top: 0;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 /* Media queries */

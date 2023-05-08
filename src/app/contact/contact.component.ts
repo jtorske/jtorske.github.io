@@ -25,12 +25,14 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {}
 
   sendEmail(): void {
+    console.log(this.contactForm); // check the form object
+    console.log(this.contactForm.valid); // check if the form is valid
+  
     if (this.contactForm.valid) {
       const templateParams = {
         from_name: this.contactForm.get('from_name')?.value ?? '',
         from_email: this.contactForm.get('from_email')?.value ?? '',
         message: this.contactForm.get('message')?.value ?? '',
-        
       };
   
       emailjs.send('service_ka7bwdr', 'template_l48nb63', templateParams, 'EVgnIVPBjqqLb3Vq4')
@@ -40,10 +42,12 @@ export class ContactComponent implements OnInit {
           console.log('There was a problem sending your message.');
           console.error('EmailJS error:', error);
         });
-        this.firstEmail = true;
-    } else{
-      alert("Please fill out all fields")
+      this.firstEmail = true;
+    } else {
+      console.log(this.contactForm.get('from_name')?.value); // check the value of 'from_name'
+      console.log(this.contactForm.get('from_email')?.value); // check the value of 'from_email'
+      console.log(this.contactForm.get('message')?.value); // check the value of 'message'
+      alert("Please fill out all fields");
     }
   }
-  
-}
+}  

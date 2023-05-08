@@ -1,15 +1,17 @@
-body {
+
+html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: white;
+    overflow: hidden;
 }
+
 
 .page-title {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 40px;
 }
 
 header {
@@ -23,14 +25,14 @@ header h1 {
 }
 
 .container {
-    padding: 2rem;
+    padding: 0rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .skill {
-    height: 200px;
+    height: 150px;
     flex: 0 0 calc(33.3333% - 1rem);
     padding: 1rem;
     margin: 0.5rem;
@@ -40,6 +42,7 @@ header h1 {
     box-sizing: border-box;
     text-align: center;
     position: relative;
+    
 }
 
 .skill-icon {
