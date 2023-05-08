@@ -1,0 +1,110 @@
+.experience-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  .company-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 15px; 
+  }
+
+  .job-title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .company {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .duration {
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  
+  .job-responsibilities {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  .resume-download{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 30px;
+  }
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  /* Mobile styles */
+  .experience-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .experience-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company-logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .job-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Tablet styles */
+  .experience-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .page-title {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .experience-item {
+    flex-wrap: wrap;
+  }
+
+  .company-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .job-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /* Desktop styles */
+
+}

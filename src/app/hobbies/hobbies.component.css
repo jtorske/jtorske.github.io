@@ -1,0 +1,94 @@
+.hobbies-container {
+  padding: 20px;
+  color: white;
+}
+
+.page-title {
+  margin-top: 0px;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hobbies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.hobby-item {
+  flex-basis: calc(50% - 40px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.hobby-title {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
+
+.hobbies-photo {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+/* Media queries */
+@media screen and (max-height: 800px), (max-width: 768px) {
+  /* Mobile styles */
+  .hobbies-container {
+    padding: 10px;
+  }
+
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .hobby-item {
+    flex-basis: calc(100% - 40px);
+  }
+
+  .hobby-title {
+    font-size: 18px;
+  }
+
+  .hobbies-photo {
+    max-height: 200px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px), (max-height: 900px) {
+  /* Tablet styles */
+  .hobbies-container {
+    padding: 10px;
+  }
+
+  .page-title {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .hobby-item {
+    flex-basis: calc(50% - 40px);
+  }
+
+  .hobby-title {
+    font-size: 20px;
+  }
+
+  .hobbies-photo {
+    max-height: 300px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /* Desktop styles */
+  /* Add any specific desktop styles if needed */
+}

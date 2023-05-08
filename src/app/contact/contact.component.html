@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="content-wrapper">
+        <div [ngSwitch]="firstEmail">
+            <div *ngSwitchCase="false">
+                <h2 class = "page-title">Contact Form</h2>
+                <form (ngSubmit)="sendEmail()" [formGroup]="contactForm">
+                    <label for="from_name">Name:</label>
+                    <input type="text" id="from_name" formControlName="from_name" required>
+                    <br>
+                    <label for="from_email">Email:</label>
+                    <input type="email" id="from_email" formControlName="from_email" required>
+                    <br>
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea id="message" formControlName="message" rows="5" cols="50" required></textarea>
+                    <br>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+            <div *ngSwitchCase="true">
+                <h1>Email Sent Successfully</h1>
+            </div>
+        </div>
+    </div>
+</div>
