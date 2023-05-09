@@ -71,7 +71,10 @@ h1 > p{
   .nav-link:hover {
     color: rgb(0, 0, 32);
   }
-
+  .active {
+    color: rgb(0, 0, 32);
+  }
+  
   img{
     height:30px;
     width:30px;
