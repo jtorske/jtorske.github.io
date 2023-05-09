@@ -38,17 +38,18 @@ textarea {
     resize: none;
     border-radius: 10px;
 }
+
 .page-title {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 40px;
-  }
+}
+
 h1,
 h2,
 p {
     text-align: center;
     color: white;
-
 }
 
 label {
@@ -68,34 +69,51 @@ textarea {
 }
 
 #message {
-    font-size: 20px;
+    font-size: 16px;
     width: 800px;
     height: 200px;
 }
 
 input[type="submit"] {
+    border: 2px solid #010053;
     display: inline-block;
-    background-color: gray;
-    color: #fff;
+    background-color: white;
+    color: black;
     padding: 15px 30px;
     font-size: 1.2rem;
-    border: none;
     cursor: pointer;
     margin-top: 10px;
 }
 
 input[type="submit"]:hover {
     background-color: #010053;
+    color: white;
 }
 
 @media screen and (max-width: 1024px) {
     .content-wrapper {
         width: 90%;
     }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 18px;
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        height: 40px;
+    }
+
     #message {
-        font-size: 10px;
-        width: calc(100vw - 100px);
-        height: calc(100vh - 500px);
+        font-size: 16px;
+        width: 100%;
+        height: 300px;
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 1rem;
     }
 }
 
@@ -104,23 +122,24 @@ input[type="submit"]:hover {
         width: 100%;
     }
 
-    input[type="submit"] {
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
-
     input[type="text"],
     input[type="email"],
     textarea {
-        font-size: 10px;
-        width: 50%;
-        padding: 4px;
-        margin: 2px 0;
+        font-size: 16px;
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        height: 30px;
     }
 
     #message {
-        font-size: 10px;
-        width: calc(100vw - 100px);
-        height: calc(100vh - 500px);
+        font-size: 16px;
+        width: 100%;
+        height: 150px;
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 1rem;
     }
 }

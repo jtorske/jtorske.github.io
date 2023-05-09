@@ -129,11 +129,14 @@ h1 > p{
 
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1120px) {
   /* Tablet styles */
   h1 {
     font-size: 18px;
     padding-top: 30px;
+  }
+  h1 > p {
+    display:none;
   }
   
   h1 > p {
@@ -157,9 +160,16 @@ h1 > p{
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1120px) {
   .header {
     justify-content: flex-end;
   }
 
+  .nav-link {
+    float: right;
+    margin-right: 130px;
+    text-decoration: none;
+    color: white
+  }
+  
 }

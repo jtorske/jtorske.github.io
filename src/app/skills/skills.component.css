@@ -60,5 +60,6 @@ header h1 {
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
+        overflow:visible;
     }
 }
