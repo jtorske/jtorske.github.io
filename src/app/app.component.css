@@ -88,6 +88,11 @@ h1 > p{
     bottom: 0;
     left: 0;
   }
+
+  .linkedin-button:hover img {
+    filter: brightness(50%);
+  }
+  
   
 /* Media queries */
 @media screen and (max-width: 768px) {
