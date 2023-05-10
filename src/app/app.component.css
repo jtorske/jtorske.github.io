@@ -23,7 +23,9 @@
     position: relative;
 
   }
-  
+ #test{
+    display:none;
+  }
 .header {
   display: flex;
   justify-content: center;

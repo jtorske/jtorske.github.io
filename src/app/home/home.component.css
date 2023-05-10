@@ -93,4 +93,9 @@ img {
   .text-and-about {
     padding-top: 120px;
   }
+  .about{
+    font-size: 20px;
+  };
+
+
 }

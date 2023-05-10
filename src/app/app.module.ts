@@ -11,6 +11,7 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RouterModule } from '@angular/router';
     ExperienceComponent,
     HobbiesComponent,
     ContactComponent,
-    SkillsComponent
+    SkillsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

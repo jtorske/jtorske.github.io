@@ -99,7 +99,7 @@ input[type="submit"]:hover {
     input[type="email"],
     textarea {
         font-size: 18px;
-        width: 100%;
+        width: 50%;
         padding: 8px;
         margin: 5px 0;
         height: 40px;
@@ -135,11 +135,30 @@ input[type="submit"]:hover {
     #message {
         font-size: 16px;
         width: 100%;
-        height: 150px;
+        height: 20vh;
     }
 
     input[type="submit"] {
         padding: 10px 20px;
         font-size: 1rem;
     }
+}
+@media screen and (min-width: 1600px){
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 16px;
+        width: 50%;
+        padding: 8px;
+        margin: 5px 0;
+        height: 30px;
+    }
+
+#message{
+    height: 50vh;
+}
+.container{
+    padding-top: 10vh;
+}
+
 }
