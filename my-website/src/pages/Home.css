@@ -1,0 +1,31 @@
+.typing {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.typing::after {
+    content: '|';
+    color: white;
+    font-weight: bold;
+    animation: blink-caret 1s step-end infinite;
+}
+
+@keyframes blink-caret {
+    50% { opacity: 0; }
+}
+.red{
+    color: #e84a54;
+}
+.socials{
+    position:absolute;
+    bottom:0;
+    margin-bottom: 10px;
+}
+.socials a{
+    color:white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
