@@ -41,7 +41,7 @@ function Home() {
     return (
         <>
             <div className="section">
-                <p className="typing" style={{ animationDelay: '4s', fontSize: '2rem' }}>{text}</p>
+                <p className="typing" style={{ animationDelay: '4s' }}>{text}</p>
             </div>
             <div className="socials">
                 <a href="https://github.com/jtorske" target="_blank" rel="noopener noreferrer">

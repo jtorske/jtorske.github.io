@@ -3,6 +3,7 @@
     white-space: nowrap;
     overflow: hidden;
     position: relative;
+    font-size: 2rem;
 }
 
 .typing::after {
@@ -31,8 +32,8 @@
 }
 
 @media (max-width: 768px) {
-    .typing {
-        font-size: 16px; 
+    .section .typing {
+        font-size: 14px; 
     }
 
 }
