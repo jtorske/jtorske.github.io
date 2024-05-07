@@ -1,24 +1,24 @@
 .about-container {
     margin: 0px;
-    padding:0px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
-    height:95vh;
+    height: 95vh;
 }
 
 .about-title {
     text-align: center;
     margin-top: 20px;
-    height:5%
+    height: 5%
 }
 
 .content-boxes {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 40px;
     width: 100%;
     height: 95%;
-
 }
 
 .content-box1 {
@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 50px;
 }
 
 .content-box2 {
@@ -37,6 +38,8 @@
     align-items: center;
     justify-content: center;
     margin-right: 50px;
+    padding: 50px;
+
 }
 
 img {
@@ -46,27 +49,41 @@ img {
     object-fit: cover;
     display: block;
 }
+
 @media (max-width: 768px) {
+    * {}
+
     .content-boxes {
-        flex-direction: column; /* Stacks the boxes vertically */
+        flex-direction: column;
         gap: 0px;
     }
 
-    .content-box1, .content-box2 {
-        width: 100%; /* Each box takes full width */
-        height: auto; /* Adjust height to be auto for better fit */
-        margin-right: 0; /* Remove margin from content-box2 */
+    .content-box1,
+    .content-box2 {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
     }
-    .about-title{
-        font-size: 20px;
+
+    .about-title {
+        font-size: 5vw;
     }
-    .content-box1, .content-box2, img {
-        font-size: 4vw; /* Smaller font size for mobile */
-        text-align: center; /* Center text for mobile view */
+
+    .content-box1,
+    .content-box2,
+    img {
+        font-size: 3.7vw;
+        text-align: center;
+    }
+
+    .content-box1 {
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     img {
-        width: 50vw; /* Larger relative width for visibility on mobile */
-        height: 50vw; /* Maintain aspect ratio */
+        width: 50vw;
+        height: 50vw;
+
     }
 }
