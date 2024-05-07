@@ -9,6 +9,8 @@ nav {
     font-size: 62.5%;
     font-weight: 500;
     letter-spacing: 1px;
+    z-index: 100000000;
+    height: 5vh;
   }
   
   nav ul {
