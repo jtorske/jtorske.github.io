@@ -31,3 +31,21 @@ nav {
   nav ul li.active {
     color: #e84a54;
   }
+
+  @media (max-width: 768px) {
+    nav {
+        font-size: 14px;
+        justify-content: center; 
+        padding: 10px;
+    }
+
+    nav ul {
+        margin: 0; 
+        justify-content: center; 
+
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
