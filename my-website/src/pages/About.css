@@ -22,7 +22,7 @@
 }
 
 .content-box1 {
-    height: 30% !important;
+    height: 30%;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -74,6 +74,8 @@ img {
     img {
         font-size: 3.5vw;
         text-align: center;
+        align-items: flex-start;
+
     }
 
     .content-box1 {
@@ -81,12 +83,13 @@ img {
         margin: 0 !important;
     }
     .content-box2{
+        padding: 20px !important;
         padding-bottom: 15vh;
     }
 
     img {
-        width: 50vw;
-        height: 50vw;
+        width: 40vw;
+        height: 40vw;
 
     }
 }
