@@ -31,8 +31,8 @@ function App() {
   return (
     <div className="App">
       <Navbar activeSection={activeSection} />
-      <div id="home" className="section"><Home /></div>
-      <div id="about" className="section"><About /></div>
+      <div id="home" className="home-section"><Home /></div>
+      <div id="about" className="about-section"><About /></div>
       <div id="projects" className="section"><Projects /></div>
       <div id="contact" className="section"><Contact /></div>
     </div>
