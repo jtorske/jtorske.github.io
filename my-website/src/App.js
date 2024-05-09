@@ -20,9 +20,10 @@ function App() {
       const currentSection = thresholds.reduce((acc, section) => {
         return window.scrollY >= section.offsetTop - 50 ? section.id : acc;
       }, 'home');
-      console.log(currentSection)
       setActiveSection(currentSection);
     };
+
+    document.title = "Jordan Torske | Software Engineering Student";
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
