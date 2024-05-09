@@ -1,0 +1,39 @@
+.contact-container {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    width: 100%;
+}
+
+.contact-title {
+    text-align: center;
+    margin-top: 20px;
+    height: 5%
+}
+
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+
+}
+.contact-box a{
+    text-decoration: none;
+    color: white !important;
+}
+
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 5vw;
+    }
+    .contact-box{
+        font-size: 1rem;
+    }
+
+}

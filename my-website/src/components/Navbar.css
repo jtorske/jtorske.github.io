@@ -29,7 +29,10 @@ nav ul li {
 }
 
 nav ul li:hover, nav ul li.active {
-    color: #e84a54;
+    color: #e84a54 !important;
+}
+nav ul li.white{
+    color:white;
 }
 
 @media (max-width: 768px) {

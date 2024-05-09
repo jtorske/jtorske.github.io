@@ -20,7 +20,7 @@ function App() {
       const currentSection = thresholds.reduce((acc, section) => {
         return window.scrollY >= section.offsetTop - 50 ? section.id : acc;
       }, 'home');
-
+      console.log(currentSection)
       setActiveSection(currentSection);
     };
 
@@ -33,8 +33,8 @@ function App() {
       <Navbar activeSection={activeSection} />
       <div id="home" className="home-section"><Home /></div>
       <div id="about" className="about-section"><About /></div>
-      <div id="projects" className="section"><Projects /></div>
-      <div id="contact" className="section"><Contact /></div>
+      <div id="projects" className="projects-section"><Projects /></div>
+      <div id="contact" className="contact-section"><Contact /></div>
     </div>
   );
 }

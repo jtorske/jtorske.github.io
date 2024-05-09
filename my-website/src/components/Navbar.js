@@ -8,15 +8,18 @@ function Navbar({ activeSection }) {
     }
   };
 
+  console.log('Active Section:', activeSection);
+
   return (
     <nav>
       <ul>
-        <li className={activeSection === 'home' ? 'active' : ''} onClick={() => handleScroll('home')}>Home</li>
-        <li className={activeSection === 'about' ? 'active' : ''} onClick={() => handleScroll('about')}>About</li>
-        <li className={activeSection === 'projects' ? 'active' : ''} onClick={() => handleScroll('projects')}>Projects</li>
-        <li className={activeSection === 'contact' ? 'active' : ''} onClick={() => handleScroll('contact')}>Contact</li>
+        <li className={activeSection === 'home' ? 'active' : 'white'} onClick={() => handleScroll('home')}>Home</li>
+        <li className={activeSection === 'about' ? 'active' : 'white'} onClick={() => handleScroll('about')}>About</li>
+        <li className={activeSection === 'projects' ? 'active' : 'white'} onClick={() => handleScroll('projects')}>Projects</li>
+        <li className={activeSection === 'contact' ? 'active' : 'white'} onClick={() => handleScroll('contact')}>Contact</li>
       </ul>
     </nav>
   );
 }
+
 export default Navbar;
